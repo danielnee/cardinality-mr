@@ -22,5 +22,3 @@ The input is expected to consist of files containing files containing string ide
 ## Output
 
 The job will output a single file containing the estimated cardinality.
-
-Th
