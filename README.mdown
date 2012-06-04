@@ -1,0 +1,26 @@
+## Description 
+
+Hadoop Map-Reduce job for running distributed cardinality estimation.
+
+## Building
+
+Assuming you have [Apache Maven](http://maven.apache.org/) installed
+and configured:
+
+    mvn package
+
+The Maven assembly plugin will output the jar, Cardinality.MapReduce-1.0-SNAPSHOT-job.jar
+
+The Hadoop job can be run using
+
+    bin/hadoop jar <jar-location>/Cardinality.MapReduce-1.0-SNAPSHOT-job.jar <input-dir> <output-dir>
+
+## Input
+
+The input is expected to consist of files containing files containing string identifiers, one per line. The job will compute the estimated cardinality of these strings.
+
+## Output
+
+The job will output a single file containing the estimated cardinality.
+
+Th
